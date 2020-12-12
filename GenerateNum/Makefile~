@@ -1,0 +1,6 @@
+KDIR = /lib/modules/`uname -r`/build
+CFLAGS_MODULE = -Werror
+all:
+	make -C $(KDIR) M=`pwd`
+clean:
+	make -C $(KDIR) M=`pwd` clean
