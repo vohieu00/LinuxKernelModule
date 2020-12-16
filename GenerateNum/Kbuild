@@ -1,2 +1,2 @@
-EXTRA_CFLAGS = -Wall
-obj-m = GenerateNum.o
+EXTRA = -Wall
+obj-m += GenerateNum.o
