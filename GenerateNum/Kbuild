@@ -1,0 +1,2 @@
+EXTRA = -Wall
+obj-m += GenerateNum.o

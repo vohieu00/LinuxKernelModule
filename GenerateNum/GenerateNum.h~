@@ -1,0 +1,17 @@
+#include <linux/init.h> //for __init and __exit
+#include <linux/module.h> //loading LKM into kernel
+#include <linux/device.h>
+#include <linux/kernel.h>
+#include <linux/fs.h>
+#include <linux/uaccess.h>
+#include <linux/random.h>
+
+//static int __init generateDevice_init(void);
+//MODULE_LICENSE("GPL");
+
+MODULE_AUTHOR("Vo Thi Hieu - Tran Van Hieu - Nguyen Van Hiep");
+MODULE_DESCRIPTION("A simple visualization for Linux char driver");
+MODULE_VERSION("1.0");
+static int __init init_hello(void);
+static int __exit exit_hello(void);
+
